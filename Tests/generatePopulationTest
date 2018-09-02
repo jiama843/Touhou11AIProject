@@ -10,6 +10,6 @@ GeneratePopulation.generateNodes(84, 98)
 population = GeneratePopulation.generatePopulation(5)
 
 for i in range(0, len(population)):
-    population[i].printTHNetwork() #make print return valuable info
+    population[i][0].printTHNetwork() #make print return valuable info
 
 print(len(NNDatabase.connGenes))

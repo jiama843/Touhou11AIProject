@@ -64,19 +64,25 @@ for i in range(0, 84):
 
     inputArr.append(tempArr)
 
-testNetwork.mutateAddNode()
-testNetwork.mutateAddConn()
-testNetwork.printTHNetwork() #make print return valuable inf
+#testNetwork.mutateAddNode()
+#testNetwork.mutateAddConn()
+#testNetwork.printTHNetwork() #make print return valuable inf
+
+species0 = []
+species0.append(testNetwork)
+NNDatabase.population.append(species0)
+
+Controller.runController()
 
 #while(1):
-outputArr = testNetwork.evaluate(inputArr)
+#outputArr = testNetwork.evaluate(inputArr)
 #    print(outputArr)
 
-print(outputArr)
+"""print(outputArr)
 
 for i in range(0, len(outputArr)):
     outputArr[i].printNodeGene()
-    print(outputArr[i].val)
+    print(outputArr[i].val)"""
 
 """from NEATAlgorithm import GeneratePopulation
 from NNData import NNDatabase

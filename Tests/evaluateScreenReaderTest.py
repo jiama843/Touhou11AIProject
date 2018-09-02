@@ -1,5 +1,6 @@
 import os
 from Controller import Controller
+from ScreenReader import ScreenReader
 from NEATAlgorithm import GeneratePopulation
 from NEATAlgorithm import THNetwork
 from NEATAlgorithm import THGene
@@ -64,9 +65,12 @@ for i in range(0, 84):
 
     inputArr.append(tempArr)
 
-NNDatabase.population.append(testNetwork)
+species0 = []
+species0.append(testNetwork)
+NNDatabase.population.append(species0)
 
-Controller.runController()
+sr = ScreenReader.ScreenReader()
+sr.getInputArr()
 
 """#while(1):
 outputArr = testNetwork.evaluate(inputArr)
