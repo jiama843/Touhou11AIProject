@@ -22,3 +22,9 @@ First commit from Atlassian includes:
 7. Activation function templates 
 
 To Do: (6 items)
+
+# To Use:
+- Install Touhou 11
+- Input the right screen area
+- Run Controller.py
+- Watch it go
